@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="sv">
+    <head>
+        <title>Webbprojekt</title>
+        <meta charset="UTF-8" />
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+    </head>
+    <body>
+        <header>
+            <h1>Djupviks Hamn</h1>
+            <img src="../images/header.jpg" alt="Flertal trähus intill hamn där en båt ligger förtöjd" width="1024" height="404">
+        </header>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Hem</a></li>
+                <li><a href="seogora.html">Se & Göra</a></li>
+                <li><a href="gaster.html">Gäster</a></li>
+                <li><a href="medlemmar.html">Medlemmar</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a id="active" href="#">Kontakt</a></li>
+                <li><a href="english.html">English</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Kontaktinformation</h2>
+                <article>
+                    <h3>Kontakta hamnföreningen</h3>
+                    <p>
+                        Hamnfogde Bo Lautin, mobil 0707-920310 <br><br>
+                        Djupviks hamnförening <br>
+                        c/o Ekholm <br>
+                        Eksta Hägur 170 <br>
+                        623 54 Klintehamn
+                    </p>
+                </article>
+                <article>
+                    <h3>
+                        Kontaktformulär
+                    </h3>
+                    <form action="tack.html">
+                        <p>
+                            <label for="Name">Ditt namn:</label> <br>
+                            <input type="text" name="name" id="Name" required/>
+                        </p>  
+                        <p>
+                            <label for="Subject">Rubrik för ditt ärende:</label> <br>
+                            <input type="text" name="subject" id="Subject" required/>
+                        </p>
+                        <p>
+                            <label for="Cause">Vad gäller ärendet:</label><br>
+                            <select name="cause" id="Cause" required>
+                                <option value="">Välj</option>
+                                <option value="boat">Båtplats</option>
+                                <option value="member">Medlem</option>
+                                <option value="other">Övrigt</option>
+                            </select>
+                        </p>   
+                        <p>
+                            <label for="Description">Beskriv ditt ärende här:</label><br>
+                            <textarea name="description" id="Description" cols="40" rows="8" required></textarea>
+                        </p>
+                        <p>
+                            <label for="Contact">Hur vill du bli kontaktad:</label><br>
+                            <select name="contact" id="Contact" required>
+                                <option value="">Välj</option>
+                                <option value="mail">Mail</option>
+                                <option value="phone">Telefon</option>
+                                <option value="not">Jag vill ej bli kontaktad</option>
+                            </select>
+                        </p> 
+                        <p>
+                            <label for="Mail">Din mail:</label><br>
+                            <input type="email" name="mail" id="Mail" required/>
+                        </p>
+                        <p>
+                            <label for="Phone">Ditt Telefonnummer:</label><br>
+                            <input type="tel" name="phone" id="Phone" required/>
+                        </p>
+                        <p>
+                            <input type="submit" value="Skicka" />
+                        </p>
+                    </form>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <p>
+                &copy; djupvikshamn.se <br>
+                info@djupvikshamn.se
+            </p>
+        </footer>
+    </body>
+</html>
