@@ -1,2 +1,2 @@
 # djupviks-hamn
-Project for the web development course 2IS220 at Uppsala university
+Project for the course 2IS220 Dynamic Web Applications at Uppsala university
